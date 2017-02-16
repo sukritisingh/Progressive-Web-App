@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Center</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/manifest.json">
+</head>
+
+<body>
+    <div class="overlay">
+    </div>
+    <div class="loader-pane">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <h1>News Center</h1>
+        <a href="#" class="menu-btn">
+            <img src="images/icons/menu.svg" alt="Sources Menu">
+        </a>
+    </header>
+    <main class="main">
+        <section class="sources">
+            <div class="container">
+                <div class="options">
+                    <a href="#" class="source-img bbc" data-id="bbc-news">
+                        <img src="images/icons/bbc.jpg" alt="BBC news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img abc" data-id="abc-news-au">
+                        <img src="images/icons/abc.png" alt="ABC news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img thehindu" data-id="the-hindu">
+                        <img src="images/icons/thehindu.png" alt="The Hindu news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img bbc-sports" data-id="bbc-sport">
+                        <img class="source-img bbc-sports" src="images/icons/bbc_sports.jpg" alt="BBC sports news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img cnbs" data-id="cnbc">
+                        <img src="images/icons/cnbc.png" alt="CNBC news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img cnn" data-id="cnn">
+                        <img src="images/icons/cnn.jpg" alt="CNN news icon">
+                    </a>
+                </div>
+                <div class="options">
+                    <a href="#" class="source-img bi" data-id="business-insider">
+                        <img src="images/icons/bi.png" alt="Business Insider news icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="sort">
+
+            <a href="#" id="default" class="sort-option active" data-sort="latest"><h2>Latest</h2></a>
+            <a href="#" class="sort-option" data-sort="top"><h2>Top</h2></a>
+            <a href="#" class="sort-option" data-sort="popular"><h2>Popular</h2></a>
+            <div class="border-bottom"></div>
+        </div>
+
+        <section class="headlines">
+
+        </section>
+
+    </main>
+<footer class="footer">
+  <div class="inside-div">
+    <h3>You are offline.</h3>
+  </div>
+
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBR-lIcr3bnbrH2276wo12xkAB7JG4Z0Y4",
+    authDomain: "newsapp-d75e5.firebaseapp.com",
+    databaseURL: "https://newsapp-d75e5.firebaseio.com",
+    storageBucket: "newsapp-d75e5.appspot.com",
+    messagingSenderId: "740772819032"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
